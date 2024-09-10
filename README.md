@@ -1,6 +1,7 @@
 -  Hi, I’m @subhradeep roy chowdhury
 - 👀 I’m interested in coding and problem solving
-- 🌱 I’m currently learning web designing,c,c++,python and sql
+- i had experience in python,sql,html,css
+- 🌱 I’m currently learning web development,c,c++ and java
 - 📫 How to reach me instagram id - @subreeex , email - subhradeeproychowdhurycode3@gmail.com
 
 <!---
