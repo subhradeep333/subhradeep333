@@ -82,7 +82,7 @@
 
 ###
 
-<p align="center">🔥 Contribution Timeline</p>
+<h2 align="center">🔥 Contribution Timeline</h2>
 
 ###
 
