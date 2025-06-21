@@ -7,14 +7,12 @@
 ###
 
 
-<img src="https://github.com/user-attachments/assets/ed485e7e-0917-447d-ad50-ee27322bfd92">
 
 
 <div align="center">
-  <img height="200" src="https://drive.google.com/file/d/1LRS_imVyz2TEs548chDfCOW-fRdVAWQJ/view?usp=drive_link"  />
+  <img height="200" src="./assest/gif.gif"  />
 </div>
-
-###
+<hr>
 
 <h2 align="center">💻🚀 Tools & Technologies I Work With</h2>
 
