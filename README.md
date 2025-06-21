@@ -2,7 +2,7 @@
 
 ###
 
-<p align="center">🎓BCA @IEM'28 | 💻 Full Stack Developer | 🎯Always Learning</p>
+<h2 align="center">🎓BCA @IEM'28 | 💻 Full Stack Developer | 🎯Always Learning</h2>
 
 ###
 
@@ -12,7 +12,7 @@
 
 ###
 
-<p align="center">💻🚀 Tools & Technologies I Work With</p>
+<h2 align="center">💻🚀 Tools & Technologies I Work With</h2>
 
 ###
 
@@ -44,7 +44,7 @@
 
 ###
 
-<p align="center">📈 A snapshot of my development journey so far.</p>
+<h2 align="center">📈 A snapshot of my development journey so far.</h2>
 
 ###
 
@@ -58,7 +58,7 @@
 
 ###
 
-<p align="center">💼 Professional & Friendly:<br>I would love to connect with you 🤝✨</p>
+<h2 align="center">💼 Professional & Friendly:<br>I would love to connect with you 🤝✨</h2>
 
 ###
 
@@ -92,7 +92,7 @@
 
 ###
 
-<p align="center">🎧 Music fuels my code — currently vibing to:</p>
+<h2 align="center">🎧 Music fuels my code — currently vibing to:</h2>
 
 ###
 
