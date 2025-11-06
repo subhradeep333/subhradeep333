@@ -107,7 +107,7 @@
 ###
 
 <div align="center">
-  <img src="https://profile-counter.glitch.me/subhradeep333/count.svg?"  />
+  <img src="https://profile-counter.glitch.me/subhradeep333/count.svg?" />
 </div>
 
 ###
