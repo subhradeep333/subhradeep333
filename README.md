@@ -1,4 +1,4 @@
-<h1 align="center">Hi everyone👋🏻! I am Subradeep Roy Chowdhury</h1>
+<h1 align="center">Hello everyone, My name is Subhradeep Roy Chowdhury.</h1>
 
 ###
 
@@ -14,7 +14,7 @@
 </div>
 <hr>
 
-<h2 align="center">💻🚀 Tools & Technologies I Work With</h2>
+<h2 align="center">Tools and Technologies I Specialize In</h2>
 
 ###
 
