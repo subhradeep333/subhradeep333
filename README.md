@@ -64,6 +64,19 @@ I am always eager to learn, collaborate, and contribute to meaningful projects.
 
 <hr/>
 
+<!-- ================= BEYOND CODE ================= -->
+
+<h2 align="center">🧠 Beyond Code</h2>
+
+<ul align="center">
+  <li>I enjoy building quirky, experimental projects that begin as random ideas and turn into valuable learning experiences.</li>
+  <li>I consider myself <b>productively lazy</b> — always looking for smarter ways to automate, simplify, and optimize workflows.</li>
+  <li>Outside development, I enjoy gaming and experimenting with new ideas.</li>
+</ul>
+
+<hr/>
+
+
 <!-- ================= CONTRIBUTIONS ================= -->
 
 <h2 align="center">🔥 Contribution Timeline</h2>
@@ -79,17 +92,6 @@ I am always eager to learn, collaborate, and contribute to meaningful projects.
 
 <hr/>
 
-<!-- ================= BEYOND CODE ================= -->
-
-<h2 align="center">🧠 Beyond Code</h2>
-
-<ul align="center">
-  <li>I enjoy building quirky, experimental projects that begin as random ideas and turn into valuable learning experiences.</li>
-  <li>I consider myself <b>productively lazy</b> — always looking for smarter ways to automate, simplify, and optimize workflows.</li>
-  <li>Outside development, I enjoy gaming and experimenting with new ideas.</li>
-</ul>
-
-<hr/>
 
 <!-- ================= CONNECT ================= -->
 
