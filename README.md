@@ -2,7 +2,7 @@
 
 <h1 align="center">Hello everyone, I'm Subhradeep Roy Chowdhury</h1>
 
-<h3 align="center">🎓 BCA @ IEM '28 | 💻 Full Stack Developer | 🎯 Always Learning</h3>
+<h3 align="center">BCA @ IEM '28 | Full Stack Developer | Always Learning</h3>
 
 <p align="center">
 Hi, I’m <a href="https://www.linkedin.com/in/subhradeep-roy-chowdhury-715264318" target="_blank"><b>Subhradeep Roy Chowdhury</b></a> — a passionate developer focused on building modern, responsive, and user-centric web applications. 
@@ -20,7 +20,7 @@ I am always eager to learn, collaborate, and contribute to meaningful projects.
 
 <!-- ================= TECH STACK ================= -->
 
-<h2 align="center">🛠️ Tools & Technologies</h2>
+<h2 align="center">Tools & Technologies</h2>
 
 <div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="60"/>
@@ -52,7 +52,7 @@ I am always eager to learn, collaborate, and contribute to meaningful projects.
 
 <!-- ================= STATS ================= -->
 
-<h2 align="center">📈 Development Journey</h2>
+<h2 align="center">Development Journey</h2>
 
 <div align="center">
   <img src="https://streak-stats.demolab.com?user=subhradeep333&theme=dracula" height="150"/>
@@ -109,12 +109,3 @@ I am always eager to learn, collaborate, and contribute to meaningful projects.
 
 <hr/>
 
-<!-- ================= MUSIC ================= -->
-
-<h2 align="center">🎧 Music Fuels My Code</h2>
-
-<div align="center">
-  <a href="https://open.spotify.com/user/31z6iorln4bdzlaimawjtils4zma">
-    <img src="https://spotify-recently-played-readme.vercel.app/api?user=31z6iorln4bdzlaimawjtils4zma&count=3"/>
-  </a>
-</div>
