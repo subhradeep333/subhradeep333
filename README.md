@@ -44,22 +44,6 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="60" alt="git logo"  />
 </div>
 
-###
-
-<h2 align="center">📈 A snapshot of my development journey so far.</h2>
-
-###
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=subhradeep333&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false&order=1" height="150" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=subhradeep333&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=radical&hide_border=false&order=2" height="189" alt="languages graph"  />
-  <img src="https://streak-stats.demolab.com?user=subhradeep333&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=5&order=3" height="150" alt="streak graph"  />
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=subhradeep333&radius=90&theme=dracula&area=true&order=5&custom_title=Subhradeep's%20Contribution%20Graph&hide_border=true&hide_title=false&bg_color=black" height="200" alt="activity-graph graph"  />
-  <img src="https://github-profile-trophy.vercel.app?username=subhradeep333&theme=dark_lover&column=5&row=1&margin-w=8&margin-h=8&no-bg=true&no-frame=true&order=4" height="150" alt="trophy graph"  />
-</div>
-
-###
-
 <h2 align="center">💼 Professional & Friendly:<br>I would love to connect with you 🤝✨</h2>
 
 ###
@@ -102,12 +86,6 @@
   <a href="https://open.spotify.com/user/31z6iorln4bdzlaimawjtils4zma">
     <img src="https://spotify-recently-played-readme.vercel.app/api?user=31z6iorln4bdzlaimawjtils4zma&count=3&unique=false" alt="Spotify recently played"  />
   </a>
-</div>
-
-###
-
-<div align="center">
-  <img src="https://profile-counter.glitch.me/subhradeep333/count.svg?" />
 </div>
 
 ###
