@@ -86,7 +86,6 @@ I am always eager to learn, collaborate, and contribute to meaningful projects.
 <ul align="center">
   <li>I enjoy building quirky, experimental projects that begin as random ideas and turn into valuable learning experiences.</li>
   <li>I consider myself <b>productively lazy</b> — always looking for smarter ways to automate, simplify, and optimize workflows.</li>
-  <li>Music plays a huge role in my productivity and creativity while coding.</li>
   <li>Outside development, I enjoy gaming and experimenting with new ideas.</li>
 </ul>
 
