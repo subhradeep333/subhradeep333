@@ -1,6 +1,6 @@
 <!-- ================= HEADER ================= -->
 
-<h1 align="center">Hello everyone, I'm Subhradeep Roy Chowdhury</h1>
+<h1 align="center">I'm Subhradeep Roy Chowdhury</h1>
 
 <h3 align="center">BCA @ IEM '28 | Full Stack Developer | Always Learning</h3>
 
@@ -66,7 +66,7 @@ I am always eager to learn, collaborate, and contribute to meaningful projects.
 
 <!-- ================= BEYOND CODE ================= -->
 
-<h2 align="center">🧠 Beyond Code</h2>
+<h2 align="center"> Beyond Code</h2>
 
 <ul align="center">
   <li>I enjoy building quirky, experimental projects that begin as random ideas and turn into valuable learning experiences.</li>
@@ -79,7 +79,7 @@ I am always eager to learn, collaborate, and contribute to meaningful projects.
 
 <!-- ================= CONTRIBUTIONS ================= -->
 
-<h2 align="center">🔥 Contribution Timeline</h2>
+<h2 align="center"> Contribution Timeline</h2>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" 
@@ -95,7 +95,7 @@ I am always eager to learn, collaborate, and contribute to meaningful projects.
 
 <!-- ================= CONNECT ================= -->
 
-<h2 align="center">🤝 Let's Connect</h2>
+<h2 align="center"> Let's Connect</h2>
 
 <div align="center">
   <a href="https://www.linkedin.com/in/subhradeep-roy-chowdhury-715264318">
