@@ -118,7 +118,7 @@
 
 <p align="center">
   <a href="https://www.subradeepdev.in/" target="_blank" rel="noopener noreferrer">
-    <img src="./assets/06-portfolio-slow-reveal.svg" alt="Keep it moving — subradeepdev.in & GitHub" width="100%" />
+    <img src="./assets/06-portfolio-pill.svg" alt="Keep it moving — subradeepdev.in & GitHub" width="100%" />
   </a>
 </p>
 
