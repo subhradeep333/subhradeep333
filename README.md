@@ -20,9 +20,10 @@
   <img src="./assets/01-terminal-typewriter.svg" alt="SUBHRADEEP — Terminal ASCII Typing Wordmark" width="100%" />
 </p>
 
+<!-- ================= UNIVERSE BIO BANNER ================= -->
+
 <p align="center">
-  <b>BCA @ IEM '28 &nbsp;•&nbsp; Full Stack Developer &nbsp;•&nbsp; Always Learning</b><br/>
-  <i>Hi, I’m Subhradeep Roy Chowdhury — passionate about building modern, responsive, and user-centric web applications. Driven by turning ideas into impactful solutions through clean, creative code.</i>
+  <img src="./assets/universe-bio-banner.svg" alt="Subhradeep Roy Chowdhury — BCA @ IEM '28 • Full Stack Developer • Always Learning" width="100%" />
 </p>
 
 <br/>
