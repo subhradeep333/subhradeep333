@@ -261,6 +261,5 @@
     <!-- Left Caption -->
     <text x="32" y="370" class="mono" font-size="11" font-weight="400" letter-spacing="0.02em" fill="#8b9ec2">4 featured repositories · follow the line from first signal to latest motion</text>
     <!-- Right Watermark -->
-    <text x="808" y="370" text-anchor="end" class="mono" font-size="10" font-weight="400" fill="#5c6f94">gitskins.com</text>
   </g>
 </svg>

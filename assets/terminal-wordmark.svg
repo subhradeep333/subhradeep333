@@ -265,6 +265,5 @@
     </g>
 
     <!-- Bottom-Right Watermark -->
-    <text x="816" y="176" text-anchor="end" class="font-mono" font-size="9.5" font-weight="400" fill="#525e70">gitskins.com</text>
   </g>
 </svg>

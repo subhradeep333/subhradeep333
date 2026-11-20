@@ -1,0 +1,265 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 390" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap');
+
+      .bg-card { fill: #070b14; stroke: #1d2842; stroke-width: 1.5; rx: 16px; }
+      .mono { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', ui-monospace, monospace; }
+      
+      /* Orbital ring continuous rotation */
+      .spin-cw {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: rotateCW 6s linear infinite;
+      }
+      .spin-ccw {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: rotateCCW 6s linear infinite;
+      }
+
+      @keyframes rotateCW {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes rotateCCW {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(-360deg); }
+      }
+
+      /* Launch Track Signal Flow */
+      .launch-rail-progress {
+        stroke-dasharray: 8, 8;
+        animation: trackFlow 6s linear infinite;
+      }
+      @keyframes trackFlow {
+        from { stroke-dashoffset: 0; }
+        to { stroke-dashoffset: -64; }
+      }
+
+      /* Traveling light packet */
+      .traveling-packet {
+        animation: packetTravel 6s linear infinite;
+      }
+      @keyframes packetTravel {
+        0% { transform: translateX(60px); opacity: 0; }
+        5% { opacity: 1; }
+        95% { opacity: 1; }
+        100% { transform: translateX(780px); opacity: 0; }
+      }
+
+      /* Momentary ring brightening as packet passes */
+      .ring-node-1 {
+        animation: brightenNode1 6s linear infinite;
+      }
+      .ring-node-2 {
+        animation: brightenNode2 6s linear infinite;
+      }
+      .ring-node-3 {
+        animation: brightenNode3 6s linear infinite;
+      }
+      .ring-node-4 {
+        animation: brightenNode4 6s linear infinite;
+      }
+
+      @keyframes brightenNode1 {
+        0%, 6% { opacity: 0.55; stroke-width: 1.5; }
+        10%, 14% { opacity: 1; stroke-width: 2.2; }
+        18%, 100% { opacity: 0.55; stroke-width: 1.5; }
+      }
+      @keyframes brightenNode2 {
+        0%, 32% { opacity: 0.55; stroke-width: 1.5; }
+        36%, 40% { opacity: 1; stroke-width: 2.2; }
+        44%, 100% { opacity: 0.55; stroke-width: 1.5; }
+      }
+      @keyframes brightenNode3 {
+        0%, 58% { opacity: 0.55; stroke-width: 1.5; }
+        62%, 66% { opacity: 1; stroke-width: 2.2; }
+        70%, 100% { opacity: 0.55; stroke-width: 1.5; }
+      }
+      @keyframes brightenNode4 {
+        0%, 84% { opacity: 0.55; stroke-width: 1.5; }
+        88%, 92% { opacity: 1; stroke-width: 2.2; }
+        96%, 100% { opacity: 0.55; stroke-width: 1.5; }
+      }
+
+      .halo-node {
+        transform-box: fill-box;
+        transform-origin: center;
+      }
+    </style>
+
+    <!-- Radial Glow Gradients -->
+    <radialGradient id="glow-hero" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d9822b" stop-opacity="0.45" />
+      <stop offset="60%" stop-color="#d9822b" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#d9822b" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glow-java" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d9822b" stop-opacity="0.40" />
+      <stop offset="60%" stop-color="#d9822b" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#d9822b" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glow-html" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e34c26" stop-opacity="0.42" />
+      <stop offset="60%" stop-color="#e34c26" stop-opacity="0.14" />
+      <stop offset="100%" stop-color="#e34c26" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glow-js" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f1e05a" stop-opacity="0.40" />
+      <stop offset="60%" stop-color="#f1e05a" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#f1e05a" stop-opacity="0" />
+    </radialGradient>
+    
+    <!-- Filter for traveling signal packet -->
+    <filter id="packet-glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Card Surface -->
+  <rect width="840" height="390" class="bg-card" />
+
+  <!-- Header Block -->
+  <g>
+    <text x="32" y="38" class="mono" font-size="11" font-weight="500" letter-spacing="0.16em" fill="#8b9ec2">PROJECT LAUNCH SEQUENCE</text>
+    <text x="32" y="66" class="mono" font-size="22" font-weight="600" letter-spacing="-0.01em" fill="#f1f5f9">Where the work went next</text>
+  </g>
+
+  <!-- Timeline Track (y = 210) -->
+  <g>
+    <!-- Base Faint Rail -->
+    <line x1="60" y1="210" x2="780" y2="210" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" />
+    <!-- Dashed Signal Progress Line -->
+    <line x1="60" y1="210" x2="780" y2="210" stroke="#5b73a3" stroke-width="2" class="launch-rail-progress" opacity="0.6" />
+  </g>
+
+  <!-- ==================== NODE 01: HERO (Java) ==================== -->
+  <g>
+    <!-- Top-Aligned Callout (Odd: 01) -->
+    <g>
+      <text x="135" y="98" text-anchor="middle" class="mono" font-size="10" font-weight="500" letter-spacing="0.05em" fill="#8b9ec2">01 / Jul 2026</text>
+      <text x="135" y="118" text-anchor="middle" class="mono" font-size="14" font-weight="700" fill="#f1f5f9">Zero-to-Hero-in-Java</text>
+      <text x="135" y="136" text-anchor="middle" class="mono" font-size="11" font-weight="400" fill="#8b9ec2">Core Java fundamentals repo</text>
+      <text x="135" y="154" text-anchor="middle" class="mono" font-size="11" font-weight="500" fill="#d9822b">Java · ★ 9</text>
+      <!-- Subtle Connector Tick -->
+      <line x1="135" y1="163" x2="135" y2="178" stroke="#d9822b" stroke-width="1" stroke-dasharray="2, 2" opacity="0.5" />
+    </g>
+
+    <!-- Node Visual -->
+    <g>
+      <!-- Halo -->
+      <circle cx="135" cy="210" r="40" fill="url(#glow-hero)" class="halo-node" opacity="0.25" />
+      <!-- Orbital Ring (Brightens dynamically) -->
+      <g class="spin-cw ring-node-1">
+        <circle cx="135" cy="210" r="32" fill="none" stroke="rgba(217, 130, 43, 0.7)" stroke-width="1.5" stroke-dasharray="5, 5" />
+      </g>
+      <!-- Core Circle -->
+      <circle cx="135" cy="210" r="23" fill="#0d1424" stroke="#d9822b" stroke-width="2" />
+      <!-- Glyph -->
+      <text x="135" y="217" text-anchor="middle" class="mono" font-size="14" font-weight="700" fill="#d9822b">J</text>
+    </g>
+  </g>
+
+  <!-- ==================== NODE 02: SATELLITE (Java) ==================== -->
+  <g>
+    <!-- Node Visual -->
+    <g>
+      <!-- Halo -->
+      <circle cx="325" cy="210" r="34" fill="url(#glow-java)" class="halo-node" opacity="0.22" />
+      <!-- Orbital Ring -->
+      <g class="spin-ccw ring-node-2">
+        <circle cx="325" cy="210" r="28" fill="none" stroke="rgba(217, 130, 43, 0.6)" stroke-width="1.5" stroke-dasharray="4, 4" />
+      </g>
+      <!-- Core Circle -->
+      <circle cx="325" cy="210" r="20" fill="#0d1424" stroke="#d9822b" stroke-width="1.5" />
+      <!-- Glyph -->
+      <text x="325" y="216" text-anchor="middle" class="mono" font-size="13" font-weight="700" fill="#d9822b">J</text>
+    </g>
+
+    <!-- Bottom-Aligned Callout (Even: 02) -->
+    <g>
+      <!-- Connector Tick -->
+      <line x1="325" y1="240" x2="325" y2="252" stroke="#d9822b" stroke-width="1" stroke-dasharray="2, 2" opacity="0.5" />
+      <text x="325" y="266" text-anchor="middle" class="mono" font-size="14" font-weight="700" fill="#f1f5f9">LibraryManagement...</text>
+      <text x="325" y="283" text-anchor="middle" class="mono" font-size="11" font-weight="400" fill="#8b9ec2">Public work in motion.</text>
+      <text x="325" y="300" text-anchor="middle" class="mono" font-size="11" font-weight="500" fill="#d9822b">Java · ★ 0</text>
+      <!-- Minimum 8px gap guaranteed (20px gap here) -->
+      <text x="325" y="320" text-anchor="middle" class="mono" font-size="10" font-weight="500" letter-spacing="0.05em" fill="#8b9ec2">02 / Feb 2026</text>
+    </g>
+  </g>
+
+  <!-- ==================== NODE 03: SATELLITE (HTML) ==================== -->
+  <g>
+    <!-- Top-Aligned Callout (Odd: 03) -->
+    <g>
+      <text x="515" y="98" text-anchor="middle" class="mono" font-size="10" font-weight="500" letter-spacing="0.05em" fill="#8b9ec2">03 / Nov 2026</text>
+      <text x="515" y="118" text-anchor="middle" class="mono" font-size="14" font-weight="700" fill="#f1f5f9">Metasphere-2026</text>
+      <text x="515" y="136" text-anchor="middle" class="mono" font-size="11" font-weight="400" fill="#8b9ec2">Metasphere 2026 conf site</text>
+      <text x="515" y="154" text-anchor="middle" class="mono" font-size="11" font-weight="500" fill="#e34c26">HTML · ★ 1</text>
+      <!-- Connector Tick -->
+      <line x1="515" y1="163" x2="515" y2="180" stroke="#e34c26" stroke-width="1" stroke-dasharray="2, 2" opacity="0.5" />
+    </g>
+
+    <!-- Node Visual -->
+    <g>
+      <!-- Halo -->
+      <circle cx="515" cy="210" r="34" fill="url(#glow-html)" class="halo-node" opacity="0.22" />
+      <!-- Orbital Ring -->
+      <g class="spin-cw ring-node-3">
+        <circle cx="515" cy="210" r="28" fill="none" stroke="rgba(227, 76, 38, 0.65)" stroke-width="1.5" stroke-dasharray="4, 4" />
+      </g>
+      <!-- Core Circle -->
+      <circle cx="515" cy="210" r="20" fill="#0d1424" stroke="#e34c26" stroke-width="1.5" />
+      <!-- Glyph -->
+      <text x="515" y="215" text-anchor="middle" class="mono" font-size="11" font-weight="700" fill="#e34c26">&lt;&gt;</text>
+    </g>
+  </g>
+
+  <!-- ==================== NODE 04: SATELLITE (JavaScript) ==================== -->
+  <g>
+    <!-- Node Visual -->
+    <g>
+      <!-- Halo -->
+      <circle cx="705" cy="210" r="34" fill="url(#glow-js)" class="halo-node" opacity="0.22" />
+      <!-- Orbital Ring -->
+      <g class="spin-ccw ring-node-4">
+        <circle cx="705" cy="210" r="28" fill="none" stroke="rgba(241, 224, 90, 0.65)" stroke-width="1.5" stroke-dasharray="4, 4" />
+      </g>
+      <!-- Core Circle -->
+      <circle cx="705" cy="210" r="20" fill="#0d1424" stroke="#f1e05a" stroke-width="1.5" />
+      <!-- Glyph -->
+      <text x="705" y="215" text-anchor="middle" class="mono" font-size="11" font-weight="700" fill="#f1e05a">JS</text>
+    </g>
+
+    <!-- Bottom-Aligned Callout (Even: 04) -->
+    <g>
+      <!-- Connector Tick -->
+      <line x1="705" y1="240" x2="705" y2="252" stroke="#f1e05a" stroke-width="1" stroke-dasharray="2, 2" opacity="0.5" />
+      <text x="705" y="266" text-anchor="middle" class="mono" font-size="14" font-weight="700" fill="#f1f5f9">ecommerce-website</text>
+      <text x="705" y="283" text-anchor="middle" class="mono" font-size="11" font-weight="400" fill="#8b9ec2">Public work in motion.</text>
+      <text x="705" y="300" text-anchor="middle" class="mono" font-size="11" font-weight="500" fill="#f1e05a">JavaScript · ★ 1</text>
+      <!-- Minimum 8px gap guaranteed (20px gap here) -->
+      <text x="705" y="320" text-anchor="middle" class="mono" font-size="10" font-weight="500" letter-spacing="0.05em" fill="#8b9ec2">04 / Jun 2025</text>
+    </g>
+  </g>
+
+  <!-- ==================== TRAVELING LIGHT PACKET ==================== -->
+  <g class="traveling-packet">
+    <circle cx="0" cy="210" r="5" fill="#ffffff" filter="url(#packet-glow)" />
+    <circle cx="0" cy="210" r="12" fill="#5b73a3" opacity="0.3" filter="url(#packet-glow)" />
+  </g>
+
+  <!-- Footer Block -->
+  <g>
+    <!-- Full-width Dotted Divider -->
+    <line x1="32" y1="348" x2="808" y2="348" stroke="#1e2b45" stroke-width="1" stroke-dasharray="1, 12" stroke-linecap="round" />
+    <!-- Left Caption -->
+    <text x="32" y="370" class="mono" font-size="11" font-weight="400" letter-spacing="0.02em" fill="#8b9ec2">4 featured repositories · follow the line from first signal to latest motion</text>
+    <!-- Right Watermark -->
+  </g>
+</svg>

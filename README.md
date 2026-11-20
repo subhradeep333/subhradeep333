@@ -17,7 +17,7 @@
 <!-- ================= TERMINAL ASCII TYPING WORDMARK ================= -->
 
 <p align="center">
-  <img src="./assets/01-terminal-wordmark-typing.svg" alt="SUBHRADEEP — Terminal ASCII Typing Wordmark" width="100%" />
+  <img src="./assets/01-terminal-wordmark.svg" alt="SUBHRADEEP — Terminal ASCII Typing Wordmark" width="100%" />
 </p>
 
 <p align="center">
@@ -32,11 +32,11 @@
 ## Built, shipped, shared
 
 <p align="center">
-  <img src="./assets/03-project-constellation.svg" alt="Project Constellation — A universe of work" width="100%" />
+  <img src="./assets/03-project-constellation-map.svg" alt="Project Constellation — A universe of work" width="100%" />
 </p>
 
 <p align="center">
-  <img src="./assets/04-project-launch-sequence.svg" alt="Project Launch Sequence — Where the work went next" width="100%" />
+  <img src="./assets/04-project-launch-timeline.svg" alt="Project Launch Sequence — Where the work went next" width="100%" />
 </p>
 
 <br/>
@@ -78,7 +78,7 @@
 ## Uptime in motion
 
 <p align="center">
-  <img src="./assets/05-contribution-activity.svg" alt="Contribution Activity — Uptime in motion" width="100%" />
+  <img src="./assets/05-contribution-uptime.svg" alt="Contribution Activity — Uptime in motion" width="100%" />
 </p>
 
 <!-- Activity Graph (Paused)
@@ -118,7 +118,7 @@
 
 <p align="center">
   <a href="https://www.subradeepdev.in/" target="_blank" rel="noopener noreferrer">
-    <img src="./assets/06-portfolio-pill.svg" alt="Keep it moving — subradeepdev.in & GitHub" width="100%" />
+    <img src="./assets/06-portfolio-action-pill.svg" alt="Keep it moving — subradeepdev.in & GitHub" width="100%" />
   </a>
 </p>
 
