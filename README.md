@@ -81,10 +81,6 @@
   <img src="./assets/05-contribution-slow-reveal.svg" alt="Contribution Activity — Uptime in motion" width="100%" />
 </p>
 
-<div align="center">
-  <img src="https://streak-stats.demolab.com?user=subhradeep333&theme=dracula" height="150" alt="GitHub Streak Stats"/>
-</div>
-
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=subhradeep333&theme=dracula&area=true&hide_border=true&bg_color=0d1117" height="200" alt="Activity Graph"/>
 </p>
