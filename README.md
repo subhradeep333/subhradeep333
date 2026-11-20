@@ -81,11 +81,13 @@
   <img src="./assets/05-contribution-slow-reveal.svg" alt="Contribution Activity — Uptime in motion" width="100%" />
 </p>
 
+<!-- Activity Graph (Paused)
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=subhradeep333&theme=dracula&area=true&hide_border=true&bg_color=0d1117" height="200" alt="Activity Graph"/>
 </p>
+-->
 
-<!-- Pacman Live Contribution Timeline -->
+<!-- Pacman Live Contribution Timeline (Paused)
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" 
@@ -96,6 +98,7 @@
          src="https://raw.githubusercontent.com/subhradeep333/subhradeep333/output/pacman-contribution-graph.svg" width="100%">
   </picture>
 </p>
+-->
 
 <br/>
 
