@@ -1,4 +1,10 @@
-<div align="center" style="background-image: url('https://raw.githubusercontent.com/subhradeep333/subhradeep333/main/assets/universe-stars.jpg'); background-size: cover; background-repeat: repeat-y; background-position: center top; padding: 20px 0; border-radius: 16px;">
+<div align="center">
+
+<!-- ================= HERO UNIVERSE BANNER ================= -->
+
+<p align="center">
+  <img src="./assets/universe-stars.jpg" alt="Universe Starfield" width="100%" />
+</p>
 
 <!-- ================= HEADER: MASTER DESIGN SYSTEM ================= -->
 
