@@ -1,0 +1,259 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 120" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+
+      .font-sans {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      }
+
+      /* Liquid Aurora Color Waves */
+      .aurora-layer-1 {
+        animation: waveShift1 8s ease-in-out infinite alternate;
+        transform-box: fill-box;
+        transform-origin: center;
+      }
+      .aurora-layer-2 {
+        animation: waveShift2 8s ease-in-out infinite alternate;
+        transform-box: fill-box;
+        transform-origin: center;
+      }
+
+      @keyframes waveShift1 {
+        0% {
+          transform: translateX(-40px) scale(0.98);
+          opacity: 0.85;
+        }
+        50% {
+          transform: translateX(30px) scale(1.05);
+          opacity: 1;
+        }
+        100% {
+          transform: translateX(60px) scale(1.02);
+          opacity: 0.9;
+        }
+      }
+
+      @keyframes waveShift2 {
+        0% {
+          transform: translateX(40px) scale(1.02);
+          opacity: 0.75;
+        }
+        50% {
+          transform: translateX(-35px) scale(0.96);
+          opacity: 0.95;
+        }
+        100% {
+          transform: translateX(-55px) scale(1.04);
+          opacity: 0.8;
+        }
+      }
+
+      /* Pill Central Neon Bloom Breathing */
+      .pill-bloom-glow {
+        animation: bloomPulse 5s ease-in-out infinite;
+        transform-box: fill-box;
+        transform-origin: center;
+      }
+
+      @keyframes bloomPulse {
+        0%, 100% {
+          opacity: 0.82;
+          transform: scale(0.98);
+        }
+        50% {
+          opacity: 1;
+          transform: scale(1.08);
+        }
+      }
+
+      /* Pill Border Neon Pulse */
+      .pill-border-pulse {
+        animation: pillNeonBorder 5s ease-in-out infinite;
+      }
+
+      @keyframes pillNeonBorder {
+        0%, 100% {
+          filter: drop-shadow(0 0 4px #00f0ff) drop-shadow(0 0 10px rgba(0, 240, 255, 0.55));
+          stroke: #38bdf8;
+        }
+        50% {
+          filter: drop-shadow(0 0 7px #00f0ff) drop-shadow(0 0 18px rgba(0, 210, 255, 0.85));
+          stroke: #7dd3fc;
+        }
+      }
+
+      /* Circulating Neon Laser Beams */
+      .neon-beam-1 {
+        stroke-dasharray: 180 820;
+        animation: beamLoop1 6s linear infinite;
+      }
+      .neon-beam-2 {
+        stroke-dasharray: 150 850;
+        animation: beamLoop2 6s linear infinite;
+      }
+
+      @keyframes beamLoop1 {
+        from { stroke-dashoffset: 1000; }
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes beamLoop2 {
+        from { stroke-dashoffset: 500; }
+        to { stroke-dashoffset: -500; }
+      }
+
+      /* Subtle Shimmer across the pill */
+      .pill-glass-shimmer {
+        animation: shimmerPass 4.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+
+      @keyframes shimmerPass {
+        0% { transform: translateX(-160px) skewX(-20deg); opacity: 0; }
+        15% { opacity: 0.45; }
+        35% { opacity: 0.45; }
+        50% { transform: translateX(240px) skewX(-20deg); opacity: 0; }
+        100% { transform: translateX(240px) skewX(-20deg); opacity: 0; }
+      }
+
+      .pill-hover-fx {
+        cursor: pointer;
+        transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+      }
+      .pill-hover-fx:hover {
+        transform: scale(1.025);
+      }
+    </style>
+
+    <!-- Filters for Deep Glow Blurs -->
+    <filter id="heavy-plasma-blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="28" />
+    </filter>
+
+    <filter id="pill-bloom-blur" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="16" />
+    </filter>
+
+    <filter id="beam-glow-blur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" />
+    </filter>
+
+    <!-- Clip Paths -->
+    <clipPath id="card-mask">
+      <rect x="12" y="10" width="816" height="100" rx="18" />
+    </clipPath>
+
+    <clipPath id="pill-mask">
+      <rect x="322" y="38" width="196" height="44" rx="22" />
+    </clipPath>
+
+    <!-- Gradients -->
+    <!-- Base Deep Space Card Aurora Gradient -->
+    <linearGradient id="aurora-wide-1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00a896" />
+      <stop offset="22%" stop-color="#028090" />
+      <stop offset="48%" stop-color="#00a6fb" />
+      <stop offset="72%" stop-color="#4f46e5" />
+      <stop offset="90%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#4c1d95" />
+    </linearGradient>
+
+    <linearGradient id="aurora-wide-2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00c49f" />
+      <stop offset="28%" stop-color="#00b4d8" />
+      <stop offset="50%" stop-color="#0077b6" />
+      <stop offset="76%" stop-color="#5b21b6" />
+      <stop offset="100%" stop-color="#6b21a8" />
+    </linearGradient>
+
+    <!-- Center Pill Bloom Radial Gradient -->
+    <radialGradient id="center-pill-glow-rad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.9" />
+      <stop offset="35%" stop-color="#0284c7" stop-opacity="0.65" />
+      <stop offset="70%" stop-color="#0369a1" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#0369a1" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Beam 1: Electric Cyan to White Core -->
+    <linearGradient id="beam-cyan-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0" />
+      <stop offset="50%" stop-color="#00f2fe" stop-opacity="0.8" />
+      <stop offset="85%" stop-color="#38bdf8" stop-opacity="1" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="1" />
+    </linearGradient>
+
+    <!-- Beam 2: Bright Blue to Indigo Core -->
+    <linearGradient id="beam-purple-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c084fc" stop-opacity="0" />
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.85" />
+      <stop offset="85%" stop-color="#38bdf8" stop-opacity="1" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="1" />
+    </linearGradient>
+
+    <!-- Pill Glass Shimmer Gradient -->
+    <linearGradient id="glass-streak-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- GitHub Canvas Background -->
+  <rect width="840" height="120" fill="#0d1117" />
+
+  <!-- ==================== OUTER CARD ==================== -->
+  <g>
+    <!-- Base Dark Outer Card -->
+    <rect x="12" y="10" width="816" height="100" rx="18" fill="#070a12" />
+
+    <!-- Clipped Glowing Aurora Plasma Background -->
+    <g clip-path="url(#card-mask)">
+      <!-- Animated Layer 1 -->
+      <rect x="-40" y="0" width="920" height="120" fill="url(#aurora-wide-1)" class="aurora-layer-1" filter="url(#heavy-plasma-blur)" opacity="0.9" />
+      <!-- Animated Layer 2 -->
+      <rect x="-40" y="0" width="920" height="120" fill="url(#aurora-wide-2)" class="aurora-layer-2" filter="url(#heavy-plasma-blur)" opacity="0.8" />
+    </g>
+
+    <!-- Inner Translucent Dark Panel (Masks the center so outer margin glows vividly) -->
+    <rect x="30" y="21" width="780" height="78" rx="13" fill="#060913" fill-opacity="0.92" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+
+    <!-- Outer Card Subtle Edge Border -->
+    <rect x="12" y="10" width="816" height="100" rx="18" fill="none" stroke="rgba(255, 255, 255, 0.14)" stroke-width="1.2" />
+
+    <!-- Traveling Neon Laser Beam 1 (Along bottom/left perimeter) -->
+    <rect x="12" y="10" width="816" height="100" rx="18" fill="none" stroke="url(#beam-cyan-grad)" stroke-width="4" pathLength="1000" class="neon-beam-1" opacity="0.5" filter="url(#beam-glow-blur)" />
+    <rect x="12" y="10" width="816" height="100" rx="18" fill="none" stroke="url(#beam-cyan-grad)" stroke-width="1.8" pathLength="1000" class="neon-beam-1" />
+
+    <!-- Traveling Neon Laser Beam 2 (Along top/right perimeter) -->
+    <rect x="30" y="21" width="780" height="78" rx="13" fill="none" stroke="url(#beam-purple-grad)" stroke-width="3.5" pathLength="1000" class="neon-beam-2" opacity="0.45" filter="url(#beam-glow-blur)" />
+    <rect x="30" y="21" width="780" height="78" rx="13" fill="none" stroke="url(#beam-purple-grad)" stroke-width="1.6" pathLength="1000" class="neon-beam-2" />
+  </g>
+
+  <!-- ==================== CENTERED LUMINOUS PILL ==================== -->
+  <g class="pill-hover-fx">
+    <!-- Intense Radial Cyan Bloom Behind Pill -->
+    <ellipse cx="420" cy="60" rx="145" ry="48" fill="url(#center-pill-glow-rad)" class="pill-bloom-glow" filter="url(#pill-bloom-blur)" />
+
+    <!-- Solid Pill Body with Neon Glowing Edge -->
+    <rect x="322" y="38" width="196" height="44" rx="22" fill="#070a12" stroke="#38bdf8" stroke-width="1.6" class="pill-border-pulse" />
+
+    <!-- Glass Shimmer Sweep Across Pill -->
+    <g clip-path="url(#pill-mask)">
+      <rect x="322" y="38" width="75" height="44" fill="url(#glass-streak-grad)" class="pill-glass-shimmer" />
+    </g>
+
+    <!-- Circular Avatar (Dark Gray #202534) -->
+    <circle cx="346" cy="60" r="13" fill="#202534" stroke="#2e384d" stroke-width="1" />
+    <!-- White Avatar Glyph "G" -->
+    <text x="346" y="65" text-anchor="middle" class="font-sans" font-size="13" font-weight="700" fill="#ffffff">G</text>
+
+    <!-- Text Stack -->
+    <!-- Line 1: GITHUB (Bright Cyan #38bdf8) -->
+    <text x="372" y="52" class="font-sans" font-size="10" font-weight="700" fill="#38bdf8" letter-spacing="0.8px">GITHUB</text>
+
+    <!-- Line 2: @subhradeep333 (Sky Blue #e0f2fe) -->
+    <text x="372" y="69" class="font-sans" font-size="13.5" font-weight="700" fill="#e0f2fe" letter-spacing="0.2px">@subhradeep333</text>
+  </g>
+
+  <!-- ==================== WATERMARK ==================== -->
+  <text x="814" y="99" text-anchor="end" class="font-sans" font-size="9" font-weight="500" fill="#64748b" opacity="0.75">gitskins.com</text>
+</svg>

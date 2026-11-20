@@ -1,0 +1,214 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 230" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&amp;family=JetBrains+Mono:wght@500;700&amp;family=VT323&amp;display=swap');
+
+      .font-marquee {
+        font-family: 'VT323', ui-monospace, monospace;
+        letter-spacing: 0.1em;
+      }
+      .font-sans {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+      .font-mono {
+        font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      }
+
+      /* CRT Continuous Scanline Sweep */
+      .scanbar-sweep {
+        animation: scanbarSweep 5s linear infinite;
+      }
+      @keyframes scanbarSweep {
+        0% { transform: translateY(20px); opacity: 0; }
+        5% { opacity: 1; }
+        95% { opacity: 1; }
+        100% { transform: translateY(205px); opacity: 0; }
+      }
+
+      /* CRT Screen Micro-Flicker */
+      .crt-screen-flicker {
+        animation: crtFlicker 5s ease-in-out infinite;
+      }
+      @keyframes crtFlicker {
+        0%, 100% { opacity: 0.98; }
+        22% { opacity: 0.96; }
+        45% { opacity: 1; }
+        68% { opacity: 0.97; }
+        85% { opacity: 0.99; }
+      }
+
+      /* Marquee Pulse */
+      .marquee-pulse {
+        animation: marqueePulse 5s ease-in-out infinite;
+      }
+      @keyframes marqueePulse {
+        0%, 100% { opacity: 0.88; }
+        20%, 30% { opacity: 1; filter: drop-shadow(0 0 6px rgba(123, 245, 160, 0.7)); }
+        60% { opacity: 0.9; }
+      }
+
+      /* Blinking Terminal Cursor */
+      .blink-cursor {
+        animation: blink 1s step-end infinite;
+      }
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+    </style>
+
+    <!-- Scanline Repeating Pattern -->
+    <pattern id="crt-scanlines" width="100%" height="3" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="840" y2="0" stroke="#000000" stroke-width="1.2" opacity="0.32" />
+    </pattern>
+
+    <!-- Phosphor Glow Bloom Filter -->
+    <filter id="phosphor-bloom" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Scanbar Refresh Sweep Gradient -->
+    <linearGradient id="scanbar-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#76f59e" stop-opacity="0" />
+      <stop offset="50%" stop-color="#76f59e" stop-opacity="0.14" />
+      <stop offset="100%" stop-color="#76f59e" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Walnut Wood Bezel Gradients -->
+    <linearGradient id="wood-bezel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5a3f29" />
+      <stop offset="50%" stop-color="#4d3623" />
+      <stop offset="100%" stop-color="#3b291a" />
+    </linearGradient>
+
+    <!-- CRT Corner Depth Vignette -->
+    <radialGradient id="screen-vignette" cx="50%" cy="50%" r="55%">
+      <stop offset="55%" stop-color="#000000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.48" />
+    </radialGradient>
+
+    <!-- Clip for CRT Active Glass -->
+    <clipPath id="screen-clip">
+      <rect x="28" y="28" width="784" height="174" rx="8" />
+    </clipPath>
+  </defs>
+
+  <!-- GitHub Canvas Background -->
+  <rect width="840" height="230" fill="#0d1117" />
+
+  <!-- ==================== HARDWARE BEZEL ==================== -->
+  <!-- Outer Walnut Wood Cabinet -->
+  <rect x="10" y="10" width="820" height="210" rx="20" fill="url(#wood-bezel)" stroke="#322215" stroke-width="1.5" />
+  <!-- Wood Rim Highlight -->
+  <rect x="11" y="11" width="818" height="208" rx="19" fill="none" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1" />
+
+  <!-- Recessed Matte Charcoal Inner Frame -->
+  <rect x="20" y="20" width="800" height="190" rx="14" fill="#161a17" stroke="#0e1210" stroke-width="1.5" />
+  <!-- Inner Recess Shadow -->
+  <rect x="21" y="21" width="798" height="188" rx="13" fill="none" stroke="rgba(0, 0, 0, 0.65)" stroke-width="1.5" />
+
+  <!-- ==================== CRT ACTIVE SCREEN ==================== -->
+  <g clip-path="url(#screen-clip)" class="crt-screen-flicker">
+    <!-- Screen Deep Phosphor Background -->
+    <rect x="28" y="28" width="784" height="174" rx="8" fill="#07120c" />
+
+    <!-- Ambient Phosphor Tube Center Glow -->
+    <ellipse cx="420" cy="115" rx="360" ry="85" fill="#102e1c" opacity="0.45" />
+
+    <!-- ==================== LEFT COLUMN CONTENT ==================== -->
+    <g transform="translate(56, 0)">
+      <!-- Marquee Eyebrow: NOW SHOWING -->
+      <g transform="translate(0, 56)" class="marquee-pulse">
+        <rect x="-3" y="-14" width="94" height="18" fill="#0f2918" rx="2" stroke="#2a663e" stroke-width="0.8" />
+        <text x="3" y="0" class="font-marquee" font-size="16" fill="#7bf5a0" filter="url(#phosphor-bloom)">NOW SHOWING</text>
+        <!-- Blinking Retro Indicator Block -->
+        <rect x="98" y="-12" width="6" height="12" fill="#7bf5a0" class="blink-cursor" />
+      </g>
+
+      <!-- Display Name: Subhradeep -->
+      <text x="0" y="93" class="font-sans" font-size="29" font-weight="800" letter-spacing="-0.02em" fill="#7bf5a0" filter="url(#phosphor-bloom)">Subhradeep</text>
+
+      <!-- Bio / Status Copy (2 Lines) -->
+      <text x="0" y="121" class="font-sans" font-size="14.5" font-weight="500" fill="#66d98a">Building clean software, shipping public work,</text>
+      <text x="0" y="141" class="font-sans" font-size="14.5" font-weight="500" fill="#66d98a">and learning in the open.</text>
+
+      <!-- Bottom Metadata Telemetry Row -->
+      <text x="0" y="174" class="font-mono" font-size="11.5" font-weight="500" fill="#48a868">
+        Kolkata, India  ·  Developer  ·  40.8k followers  ·  258 repos
+      </text>
+    </g>
+
+    <!-- ==================== RIGHT COLUMN: 4-TONE PIXEL AVATAR ==================== -->
+    <g transform="translate(670, 59)">
+      <!-- Outer Border: 2px solid #7bf5a0 (Sharp 0px border-radius) -->
+      <rect x="0" y="0" width="112" height="112" fill="none" stroke="#7bf5a0" stroke-width="2" filter="url(#phosphor-bloom)" />
+      
+      <!-- Inner Matte Gap: 3px solid #07120c -->
+      <rect x="2" y="2" width="108" height="108" fill="#07120c" />
+
+      <!-- 102px x 102px Game Boy 4-Tone Pixel Art Canvas (17x17 grid, 6px per pixel) -->
+      <g transform="translate(5, 5)">
+        <!-- Tone 3: #5ce085 (Background Canvas) -->
+        <rect width="102" height="102" fill="#5ce085" />
+
+        <!-- Tone 0: Deep Shadow (#0e2c1a) & Tone 1: Shading (#215e37) & Tone 2: Mid-Tone (#3ca860) -->
+        <!-- Hair Base / Silhouette (Tone 0) -->
+        <rect x="24" y="12" width="54" height="18" fill="#0e2c1a" />
+        <rect x="18" y="18" width="66" height="24" fill="#0e2c1a" />
+        <rect x="12" y="30" width="78" height="24" fill="#0e2c1a" />
+
+        <!-- Hair Highlights / Midtone (Tone 1) -->
+        <rect x="30" y="18" width="18" height="6" fill="#215e37" />
+        <rect x="54" y="18" width="18" height="6" fill="#215e37" />
+        <rect x="24" y="24" width="24" height="6" fill="#215e37" />
+
+        <!-- Face / Skin (Tone 2: #3ca860 & Tone 3 Highlights) -->
+        <rect x="24" y="42" width="54" height="30" fill="#3ca860" />
+        <rect x="30" y="48" width="42" height="18" fill="#5ce085" />
+
+        <!-- Retro Square Glasses Frame (Tone 0: #0e2c1a) -->
+        <rect x="24" y="42" width="24" height="15" fill="none" stroke="#0e2c1a" stroke-width="4" />
+        <rect x="54" y="42" width="24" height="15" fill="none" stroke="#0e2c1a" stroke-width="4" />
+        <rect x="44" y="46" width="14" height="4" fill="#0e2c1a" />
+        <!-- Glasses Glint (Tone 3) -->
+        <rect x="28" y="45" width="4" height="4" fill="#5ce085" />
+        <rect x="58" y="45" width="4" height="4" fill="#5ce085" />
+
+        <!-- Nose & Mouth (Tone 1) -->
+        <rect x="49" y="58" width="4" height="4" fill="#215e37" />
+        <rect x="44" y="66" width="14" height="3" fill="#0e2c1a" />
+
+        <!-- Neck (Tone 1 & 2) -->
+        <rect x="42" y="72" width="18" height="8" fill="#215e37" />
+
+        <!-- Collar & Clothing (Tone 0 & Tone 1) -->
+        <rect x="18" y="80" width="66" height="22" fill="#0e2c1a" />
+        <rect x="24" y="84" width="18" height="18" fill="#215e37" />
+        <rect x="60" y="84" width="18" height="18" fill="#215e37" />
+        <polygon points="51,80 42,92 60,92" fill="#5ce085" />
+        <polygon points="51,86 46,96 56,96" fill="#0e2c1a" />
+
+        <!-- Headphones / Hardware Earcups (Retro Vibe) -->
+        <rect x="12" y="38" width="8" height="22" rx="2" fill="#215e37" stroke="#0e2c1a" stroke-width="2" />
+        <rect x="82" y="38" width="8" height="22" rx="2" fill="#215e37" stroke="#0e2c1a" stroke-width="2" />
+        <path d="M16 38 C16 16, 86 16, 86 38" fill="none" stroke="#0e2c1a" stroke-width="3" />
+      </g>
+    </g>
+
+    <!-- Scanbar Sweep Band -->
+    <rect x="28" y="0" width="784" height="18" fill="url(#scanbar-gradient)" class="scanbar-sweep" />
+
+    <!-- Repeating Scanline Grid Overlay -->
+    <rect x="28" y="28" width="784" height="174" fill="url(#crt-scanlines)" pointer-events="none" />
+
+    <!-- Curved CRT Glass Vignette (Dark Corners Depth) -->
+    <rect x="28" y="28" width="784" height="174" fill="url(#screen-vignette)" pointer-events="none" />
+
+    <!-- Glass Top Reflection Arc -->
+    <path d="M30 30 Q420 40 810 30" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1.5" fill="none" />
+  </g>
+</svg>

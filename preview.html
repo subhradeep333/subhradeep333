@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Profile — Master Design System (subhradeep333)</title>
+  <style>
+    :root {
+      --bg-github: #0d1117;
+      --border-github: #30363d;
+      --text-github: #c9d1d9;
+      --text-github-white: #f0f6fc;
+      --link-github: #58a6ff;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: var(--bg-github);
+      color: var(--text-github);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      width: 100%;
+      max-width: 896px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .section-title {
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--text-github-white);
+      margin-top: 18px;
+      margin-bottom: 4px;
+      border-bottom: 1px solid var(--border-github);
+      padding-bottom: 8px;
+    }
+    .card-wrapper {
+      width: 100%;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card-wrapper:hover {
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.6);
+    }
+    .card-wrapper img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .card-header-bar {
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+      margin-bottom: -4px;
+    }
+    .clickable-card {
+      text-decoration: none;
+      display: block;
+      cursor: pointer;
+    }
+    .companion-links {
+      text-align: center;
+      margin-top: -4px;
+      margin-bottom: 6px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .companion-links a {
+      color: var(--link-github);
+      text-decoration: none;
+      margin: 0 8px;
+    }
+    .companion-links a:hover {
+      text-decoration: underline;
+    }
+    .tokens-panel {
+      margin-top: 28px;
+      background: #161b22;
+      border: 1px solid var(--border-github);
+      border-radius: 8px;
+      padding: 18px 22px;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+    .tokens-panel code {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      background: #0d1117;
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: #58a6ff;
+    }
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-size: 11px;
+      font-weight: 600;
+      margin-left: 6px;
+    }
+    .badge-header { background: rgba(36, 41, 47, 0.6); color: #c9d1d9; border: 1px solid #30363d; }
+    .badge-ascii { background: rgba(230, 237, 243, 0.18); color: #e6edf3; border: 1px solid #8b949e; }
+    .badge-phosphor { background: rgba(123, 245, 160, 0.18); color: #7bf5a0; border: 1px solid #7bf5a0; }
+    .badge-cobalt { background: rgba(37, 99, 235, 0.2); color: #58a6ff; border: 1px solid #58a6ff; }
+    .badge-java { background: rgba(217, 130, 43, 0.2); color: #d9822b; border: 1px solid #d9822b; }
+    .badge-pill { background: rgba(148, 163, 184, 0.2); color: #f1f5f9; border: 1px solid #94a3b8; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Module 00: GitHub Window Header (subhradeep333 / README.md) -->
+    <div class="card-wrapper card-header-bar">
+      <img src="./assets/00-github-window-header.svg" alt="subhradeep333 / README.md — Preview" />
+    </div>
+
+    <!-- Module 01: Terminal ASCII Wordmark (Live Typing + Kinetic Motion) -->
+    <div class="card-wrapper">
+      <img src="./assets/01-terminal-wordmark-typing.svg" alt="SUBHRADEEP — Terminal ASCII Typing Wordmark" />
+    </div>
+
+    <!-- Module 02: Retro CRT "Now Showing" Identity Banner -->
+    <div class="card-wrapper">
+      <img src="./assets/02-crt-now-showing.svg" alt="Now Showing — Subhradeep Profile Banner" />
+    </div>
+
+    <!-- Section: Built, shipped, shared -->
+    <h2 class="section-title">Built, shipped, shared</h2>
+
+    <!-- Module 03: Project Constellation -->
+    <div class="card-wrapper">
+      <img src="./assets/03-project-constellation.svg" alt="Project Constellation — A universe of work" />
+    </div>
+
+    <!-- Module 04: Project Launch Sequence -->
+    <div class="card-wrapper">
+      <img src="./assets/04-project-launch-sequence.svg" alt="Project Launch Sequence — Where the work went next" />
+    </div>
+
+    <!-- Section: Uptime in motion -->
+    <h2 class="section-title">Uptime in motion</h2>
+
+    <!-- Module 05: Slow-Reveal Contribution Graph -->
+    <div class="card-wrapper">
+      <img src="./assets/05-contribution-slow-reveal.svg" alt="Contribution Activity — Uptime in motion" />
+    </div>
+
+    <!-- Section: Keep it moving -->
+    <h2 class="section-title">Keep it moving</h2>
+
+    <!-- Module 06: Slow-Reveal Portfolio & Link Pill -->
+    <div class="card-wrapper">
+      <a href="https://your-portfolio.dev" target="_blank" class="clickable-card" title="Open Portfolio Website">
+        <img src="./assets/06-portfolio-slow-reveal.svg" alt="Keep it moving — GitHub & Portfolio" />
+      </a>
+    </div>
+    <div class="companion-links">
+      <a href="https://github.com/subhradeep333" target="_blank">GitHub</a> &middot; 
+      <a href="https://your-portfolio.dev" target="_blank">Website</a>
+    </div>
+
+    <!-- Status Panel -->
+    <div class="tokens-panel">
+      <p><strong>Master Design System Status:</strong> 7-Component Native App Stack (840px Base Width)</p>
+      <ul style="margin: 8px 0 8px 20px;">
+        <li><code>00-github-window-header</code>: 840&times;48 &middot; macOS traffic lights &middot; Octocat &middot; avatar &middot; breadcrumb &middot; <code>Preview</code> tab</li>
+        <li><code>01-terminal-wordmark-typing</code>: 840&times;195 &middot; live ANSI shadow typewriter typing of <code>SUBHRADEEP</code> &middot; 7.5s loop</li>
+        <li><code>02-crt-now-showing</code>: 840&times;230 &middot; <code>Subhradeep</code> bio card &middot; Kolkata, India &middot; 5.0s scanline sweep</li>
+        <li><code>03-project-constellation</code>: 840&times;390 &middot; celestial repo graph &middot; rotating dashed rings &middot; 6.0s loop</li>
+        <li><code>04-project-launch-sequence</code>: 840&times;390 &middot; chronological milestones &middot; traveling photon packet &middot; 6.0s loop</li>
+        <li><code>05-contribution-slow-reveal</code>: 840&times;245 &middot; 53&times;7 heatmap &middot; 8.5s slow reveal wavefront &middot; aurora mesh</li>
+        <li><code>06-portfolio-slow-reveal</code>: 840&times;148 &middot; specular rim capsule &middot; <code>@subhradeep333</code> &middot; 8.0s cross-reveal</li>
+      </ul>
+      <p>
+        <strong>Theme Tokens:</strong>
+        <span class="badge badge-header">Window Header #12161c</span>
+        <span class="badge badge-ascii">Terminal Monospace #e6edf3</span>
+        <span class="badge badge-phosphor">Phosphor #7bf5a0</span>
+        <span class="badge badge-cobalt">Electric Blue #58a6ff</span>
+        <span class="badge badge-java">Java #d9822b</span>
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>

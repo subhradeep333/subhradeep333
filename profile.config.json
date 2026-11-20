@@ -1,0 +1,80 @@
+{
+  "profile": {
+    "username": "subhradeep333",
+    "displayName": "SUBHRADEEP",
+    "crtName": "Subhradeep",
+    "bio": "Building clean software, shipping public work, and learning in the open.",
+    "location": "Kolkata, India",
+    "affiliation": "Developer",
+    "website": "your-portfolio.dev",
+    "avatarUrl": "https://github.com/subhradeep333.png"
+  },
+  "windowHeader": {
+    "filename": "README.md",
+    "activeTab": "Preview",
+    "secondaryTab": "Code",
+    "showTrafficLights": true,
+    "showOctocat": true,
+    "showAvatar": true,
+    "ambientGlint": true
+  },
+  "wordmarkAnimation": {
+    "command": "./wordmark.sh --name",
+    "typingMode": "column-typewriter",
+    "commandTypingMsPerChar": 55,
+    "asciiColumnDelayMs": 22,
+    "asciiRowStaggerMs": 12,
+    "microScrambleGlyphs": [".", "-", "+"],
+    "showBlockCursor": true,
+    "cursorColor": "#58a6ff",
+    "postTypeMotion": "sine-wave-shimmer",
+    "loopDurationSec": 7.5,
+    "fps": 24
+  },
+  "featuredRepositories": [
+    {
+      "index": "01",
+      "name": "Zero-to-Hero-in-Java",
+      "description": "A concise Java repository covering core fundamentals",
+      "language": "Java",
+      "languageColor": "#d9822b",
+      "stars": 9,
+      "date": "Jul 2026",
+      "isHero": true
+    },
+    {
+      "index": "02",
+      "name": "LibraryManagementSystem",
+      "description": "Public work in motion.",
+      "language": "Java",
+      "languageColor": "#d9822b",
+      "stars": 0,
+      "date": "Feb 2026",
+      "isHero": false
+    },
+    {
+      "index": "03",
+      "name": "Metasphere-2026",
+      "description": "Metasphere 2026 conference website",
+      "language": "HTML",
+      "languageColor": "#e34c26",
+      "stars": 1,
+      "date": "Nov 2026",
+      "isHero": false
+    },
+    {
+      "index": "04",
+      "name": "ecommerce-website",
+      "description": "Public work in motion.",
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "stars": 1,
+      "date": "Jun 2025",
+      "isHero": false
+    }
+  ],
+  "links": [
+    { "label": "GitHub", "value": "@subhradeep333", "url": "https://github.com/subhradeep333" },
+    { "label": "Website", "value": "your-portfolio.dev", "url": "https://your-portfolio.dev" }
+  ]
+}
