@@ -17,7 +17,7 @@
 <!-- ================= TERMINAL ASCII TYPING WORDMARK ================= -->
 
 <p align="center">
-  <img src="./assets/01-terminal-wordmark.svg" alt="SUBHRADEEP — Terminal ASCII Typing Wordmark" width="100%" />
+  <img src="./assets/01-terminal-typewriter.svg" alt="SUBHRADEEP — Terminal ASCII Typing Wordmark" width="100%" />
 </p>
 
 <p align="center">
@@ -32,11 +32,11 @@
 ## Built, shipped, shared
 
 <p align="center">
-  <img src="./assets/03-project-constellation-map.svg" alt="Project Constellation — A universe of work" width="100%" />
+  <img src="./assets/03-constellation-orbit.svg" alt="Project Constellation — A universe of work" width="100%" />
 </p>
 
 <p align="center">
-  <img src="./assets/04-project-launch-timeline.svg" alt="Project Launch Sequence — Where the work went next" width="100%" />
+  <img src="./assets/04-launch-sequence.svg" alt="Project Launch Sequence — Where the work went next" width="100%" />
 </p>
 
 <br/>
