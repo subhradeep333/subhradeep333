@@ -1,11 +1,3 @@
-<div align="center">
-
-<!-- ================= HERO UNIVERSE BANNER ================= -->
-
-<p align="center">
-  <img src="./assets/universe-stars.jpg" alt="Universe Starfield" width="100%" />
-</p>
-
 <!-- ================= HEADER: MASTER DESIGN SYSTEM ================= -->
 
 <p align="center">
@@ -28,10 +20,9 @@
   <img src="./assets/01-terminal-typewriter.svg" alt="SUBHRADEEP — Terminal ASCII Typing Wordmark" width="100%" />
 </p>
 
-<!-- ================= UNIVERSE BIO BANNER ================= -->
-
 <p align="center">
-  <img src="./assets/universe-bio-banner.svg" alt="Subhradeep Roy Chowdhury — BCA @ IEM '28 • Full Stack Developer • Always Learning" width="100%" />
+  <b>BCA @ IEM '28 &nbsp;•&nbsp; Full Stack Developer &nbsp;•&nbsp; Always Learning</b><br/>
+  <i>Hi, I’m Subhradeep Roy Chowdhury — passionate about building modern, responsive, and user-centric web applications. Driven by turning ideas into impactful solutions through clean, creative code.</i>
 </p>
 
 <br/>
@@ -152,5 +143,3 @@
     <img src="https://img.shields.io/static/v1?message=Facebook&logo=facebook&color=1877F2&logoColor=white&style=for-the-badge" height="26" alt="Facebook"/>
   </a>
 </p>
-
-</div>
