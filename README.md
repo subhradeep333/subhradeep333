@@ -117,12 +117,16 @@
 ## Keep it moving
 
 <p align="center">
-  <a href="https://your-portfolio.dev" target="_blank" rel="noopener noreferrer">
-    <img src="./assets/06-portfolio-slow-reveal.svg" alt="Keep it moving — GitHub & Portfolio" width="100%" />
+  <a href="https://www.subradeepdev.in/" target="_blank" rel="noopener noreferrer">
+    <img src="./assets/06-portfolio-slow-reveal.svg" alt="Keep it moving — subradeepdev.in & GitHub" width="100%" />
   </a>
 </p>
 
 <p align="center">
+  <a href="https://www.subradeepdev.in/" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=Website&logo=googlechrome&color=58a6ff&logoColor=white&style=for-the-badge" height="26" alt="Website"/>
+  </a>
+  &nbsp;
   <a href="https://www.linkedin.com/in/subhradeep-roy-chowdhury-715264318" target="_blank">
     <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&color=0077B5&logoColor=white&style=for-the-badge" height="26" alt="LinkedIn"/>
   </a>

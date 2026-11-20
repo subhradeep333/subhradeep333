@@ -54,7 +54,7 @@
       }
 
       /* 4-Phase Slow-Reveal Destination Cross-Fade (8.0s Loop) */
-      /* Destination 1: Website / your-portfolio.dev (0.0s – 3.8s) */
+      /* Destination 1: Website / subradeepdev.in (0.0s – 3.8s) */
       .dest-website {
         animation: revealWebsite 8s cubic-bezier(0.16, 1, 0.3, 1) infinite;
       }
@@ -206,7 +206,7 @@
     <rect x="310" y="48" width="220" height="52" rx="26" fill="none" stroke="url(#specular-beam-grad)" stroke-width="3" pathLength="660" class="specular-rim-trace" filter="url(#specular-glow)" opacity="0.6" />
     <rect x="310" y="48" width="220" height="52" rx="26" fill="none" stroke="url(#specular-beam-grad)" stroke-width="1.5" pathLength="660" class="specular-rim-trace" />
 
-    <!-- ==================== DESTINATION 1: WEBSITE / your-portfolio.dev ==================== -->
+    <!-- ==================== DESTINATION 1: WEBSITE / subradeepdev.in ==================== -->
     <g class="dest-website">
       <!-- Icon Medallion: Globe (28px x 28px circle at cx=338, cy=74) -->
       <circle cx="338" cy="74" r="14" fill="#363d4a" />
@@ -219,8 +219,8 @@
       <!-- Text Stack -->
       <!-- Eyebrow: Website -->
       <text x="364" y="67" class="font-sans" font-size="11" font-weight="600" letter-spacing="0.02em" fill="#8b9ab2">Website</text>
-      <!-- Domain: your-portfolio.dev -->
-      <text x="364" y="85" class="font-sans" font-size="14.5" font-weight="700" letter-spacing="-0.01em" fill="#f3f6fa">your-portfolio.dev</text>
+      <!-- Domain: subradeepdev.in -->
+      <text x="364" y="85" class="font-sans" font-size="14.5" font-weight="700" letter-spacing="-0.01em" fill="#f3f6fa">subradeepdev.in</text>
     </g>
 
     <!-- ==================== DESTINATION 2: GITHUB / @subhradeep333 ==================== -->

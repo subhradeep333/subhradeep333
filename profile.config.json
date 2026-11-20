@@ -6,7 +6,7 @@
     "bio": "Building clean software, shipping public work, and learning in the open.",
     "location": "Kolkata, India",
     "affiliation": "Developer",
-    "website": "your-portfolio.dev",
+    "website": "subradeepdev.in",
     "avatarUrl": "https://github.com/subhradeep333.png"
   },
   "windowHeader": {
@@ -75,6 +75,6 @@
   ],
   "links": [
     { "label": "GitHub", "value": "@subhradeep333", "url": "https://github.com/subhradeep333" },
-    { "label": "Website", "value": "your-portfolio.dev", "url": "https://your-portfolio.dev" }
+    { "label": "Website", "value": "subradeepdev.in", "url": "https://www.subradeepdev.in/" }
   ]
 }
