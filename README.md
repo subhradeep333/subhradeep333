@@ -5,11 +5,11 @@
 </p>
 
 <p align="center">
-  <img src="./assets/01-terminal-wordmark-typing.svg" alt="SUBHRADEEP — Terminal ASCII Typing Wordmark" width="100%" />
+  <img src="./assets/02-crt-now-showing.svg" alt="Now Showing — Subhradeep Profile Banner" width="100%" />
 </p>
 
 <p align="center">
-  <img src="./assets/02-crt-now-showing.svg" alt="Now Showing — Subhradeep Profile Banner" width="100%" />
+  <img src="./assets/01-terminal-wordmark-typing.svg" alt="SUBHRADEEP — Terminal ASCII Typing Wordmark" width="100%" />
 </p>
 
 <!-- ================= ANIMATED DEV FOCUS & BIO ================= -->
