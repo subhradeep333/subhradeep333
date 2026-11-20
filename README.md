@@ -78,7 +78,7 @@
 ## Uptime in motion
 
 <p align="center">
-  <img src="./assets/05-contribution-slow-reveal.svg" alt="Contribution Activity — Uptime in motion" width="100%" />
+  <img src="./assets/05-contribution-activity.svg" alt="Contribution Activity — Uptime in motion" width="100%" />
 </p>
 
 <!-- Activity Graph (Paused)
