@@ -1,3 +1,5 @@
+<div align="center" style="background-image: url('https://raw.githubusercontent.com/subhradeep333/subhradeep333/main/assets/universe-stars.jpg'); background-size: cover; background-repeat: repeat-y; background-position: center top; padding: 20px 0; border-radius: 16px;">
+
 <!-- ================= HEADER: MASTER DESIGN SYSTEM ================= -->
 
 <p align="center">
@@ -144,3 +146,5 @@
     <img src="https://img.shields.io/static/v1?message=Facebook&logo=facebook&color=1877F2&logoColor=white&style=for-the-badge" height="26" alt="Facebook"/>
   </a>
 </p>
+
+</div>
